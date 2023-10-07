@@ -6,6 +6,8 @@ import user4 from '../assets/woman.jpg'
 import user5 from '../assets/international.jpg'
 import user6 from '../assets/closeee.jpg'
 
+
+
 const Customer = () => {
     return (
         <div className='lg:w-9/12 mx-auto mt-6'>

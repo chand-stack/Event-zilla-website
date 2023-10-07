@@ -1,11 +1,13 @@
 import Banner from "../../Shared/Banner";
 import Customer from "../../Shared/Customer";
 import Service from "../../Shared/Service";
+import ServiceBanner from "../../Shared/ServiceBanner";
 
 const Home = () => {
     return (
         <div>
            <div><Banner/></div>
+           <ServiceBanner/>
             <Service/>
             <div className=" text-center mt-10 lg:mt-20">
                 <h1 className="text-3xl md:text-5xl lg:text-7xl">What Our <span className="font-medium text-pink-500">Customers</span> Say!</h1>

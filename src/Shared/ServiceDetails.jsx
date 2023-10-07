@@ -1,10 +1,11 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const ServiceDetails = ({item}) => {
     console.log(item);
-    const {name,image,price,short_detail} = item;
+    const {name,image,price,short_detail,id} = item;
 
 
     useEffect(() => {
@@ -19,7 +20,7 @@ const ServiceDetails = ({item}) => {
                 <h1 className="flex-grow text-xl font-semibold text-pink-500">{name}</h1>
                 <p className="flex-grow font-semibold border-b">{short_detail}</p>
                 <p className="flex-grow font-semibold">{price}$</p>
-                <button className="btn text-white bg-pink-500 border-none hover:text-black">View Details</button>
+                <Link to={`/detail/${id}`}><button className="btn text-white bg-pink-500 border-none hover:text-black">View Details</button></Link>
             </div>
         </div>
     );
