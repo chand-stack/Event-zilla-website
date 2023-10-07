@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const ServiceDetails = ({item}) => {
-    console.log(item);
     const {name,image,price,short_detail,id} = item;
 
 
