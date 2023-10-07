@@ -17,7 +17,7 @@ const ServiceDetails = ({item}) => {
             <img className="h-60" src={image} alt="" />
             <div className="flex flex-col">
                 <h1 className="flex-grow text-xl font-semibold text-pink-500">{name}</h1>
-                <p className="flex-grow font-semibold">{short_detail}</p>
+                <p className="flex-grow font-semibold border-b">{short_detail}</p>
                 <p className="flex-grow font-semibold">{price}$</p>
                 <button className="btn text-white bg-pink-500 border-none hover:text-black">View Details</button>
             </div>
