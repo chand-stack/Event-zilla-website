@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import { FcGoogle } from 'react-icons/fc';
 
 const Register = () => {
     return (
         <div>
-            <div className=" bg-white p-3 border-2 border-black my-5 mx-auto lg:w-3/6 md:w-4/5">
+            <div className=" bg-white p-3 border-2 border-black my-5 mx-1 md:mx-auto lg:w-3/6 md:w-4/5">
   <div className=" flex-col ">
     <div className="my-2 ">
       <h1 className="text-5xl font-bold text-pink-500"><span className="text-black">Register</span> now!</h1>
@@ -41,7 +42,13 @@ const Register = () => {
           <button className="btn btn-primary bg-black text-pink-500 font-bold border-none">Create an account</button>
         </div>
         <p className="font-bold text-center">Already Have An Account? Please <Link to="/login" className="text-pink-500">Login</Link></p>
+
+        <p className="text-center my-3 font-bold text-xl">---Or---</p>
+        <div className="flex justify-center">
+        <Link><button className="btn btn-outline font-extrabold flex justify-center"><FcGoogle className="text-2xl"/>Continue with google</button></Link>
+        </div>
       </form>
+      
     </div>
   </div>
 </div>
