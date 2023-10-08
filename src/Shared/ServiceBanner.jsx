@@ -12,7 +12,7 @@ const ServiceBanner = () => {
       }, [])
   return (
     <>
-<Marquee className="bg-black" pauseOnHover={true}><p className="text-xl md:text-2xl font-semibold py-5 bg-black text-pink-500 flex gap-16"><p className="flex items-center gap-2">Wedding Event<GiPartyPopper/></p> <p className="flex items-center gap-2">Private Event<GiPartyPopper/></p> <p className="flex items-center gap-2">Corporate Event <GiPartyPopper/></p> <p className="flex items-center gap-2">Birthday Event<GiPartyPopper/></p> <p className="flex items-center gap-2">Themed Event<GiPartyPopper/></p> <p className="flex items-center gap-2">Holiday Event</p></p>
+<Marquee className="bg-black" pauseOnHover={true}><div className="text-xl md:text-2xl font-semibold py-5 bg-black text-pink-500 flex gap-16"><p className="flex items-center gap-2">Wedding Event<GiPartyPopper/></p> <p className="flex items-center gap-2">Private Event<GiPartyPopper/></p> <p className="flex items-center gap-2">Corporate Event <GiPartyPopper/></p> <p className="flex items-center gap-2">Birthday Event<GiPartyPopper/></p> <p className="flex items-center gap-2">Themed Event<GiPartyPopper/></p> <p className="flex items-center gap-2">Holiday Event</p></div>
 </Marquee>
     <div className="flex flex-col-reverse lg:flex-row my-9 gap-5">
         <img data-aos="fade-up-right"

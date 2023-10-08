@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
@@ -6,6 +6,10 @@ import swal from 'sweetalert';
 
 const Register = () => {
     const {createUser,updateUser,loginWithGoogle} = useContext(AuthContext)
+
+    const navigate = useNavigate()
+    
+    // console.log( navigate);
 
     const registerHandler = e => {
         e.preventDefault()
@@ -48,7 +52,8 @@ const Register = () => {
             swal({
                 icon: "success",
                 title:"Successfully Registered"
-              });
+              })
+              navigate("/")
         })
         .catch(error => {
             console.log(error)
@@ -58,7 +63,9 @@ const Register = () => {
 
     const googlehandler = () => {
       loginWithGoogle()
-      .then(()=>{})
+      .then(()=>{
+        navigate("/")
+      })
       .catch(()=>{})
     }
 

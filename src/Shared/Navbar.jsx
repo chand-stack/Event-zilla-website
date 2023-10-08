@@ -1,12 +1,16 @@
-import { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import userimg from '../assets/icons8-user.gif'
 
 const Navbar = () => {
 
   const {user,logout} = useContext(AuthContext)
+  const [userName,setUserName] = useState(null)
 
+  useEffect(()=>{
+setUserName(user?.displayName)
+  },[user])
     const links = <>
     <li className="font-semibold text-xl"><NavLink
   to="/"
@@ -34,9 +38,13 @@ const Navbar = () => {
 </NavLink></li>
     </>
 
+    const navigate = useNavigate()
+
     const handleLogout = () =>{
       logout()
-      .then(()=>{})
+      .then(()=>{
+        navigate("/")
+      })
       .catch(()=>{})
     }
 
@@ -62,7 +70,7 @@ const Navbar = () => {
   <div className="navbar-end">
     {
       user ? <div className="flex items-center gap-3">
-        <p>{user?.displayName}</p>
+        <p>{userName}</p>
         <div>
         <img className="rounded-full h-14" src={user?.photoURL ? user?.photoURL : userimg} alt="" />
         </div>
