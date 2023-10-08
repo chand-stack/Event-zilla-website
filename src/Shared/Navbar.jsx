@@ -36,6 +36,14 @@ setUserName(user?.displayName)
 >
   Contact Us
 </NavLink></li>
+    <li className="font-semibold text-xl"><NavLink
+  to="/blog"
+  className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "text-pink-500" : ""
+  }
+>
+  Blog
+</NavLink></li>
     </>
 
     const navigate = useNavigate()

@@ -2,13 +2,10 @@
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-black text-white mt-14">
+        <footer className="footer p-10 bg-black text-white ">
   <nav>
-    <header className="text-xl font-bold text-pink-500">Services</header> 
-    <a className="link link-hover">Branding</a> 
-    <a className="link link-hover">Design</a> 
-    <a className="link link-hover">Marketing</a> 
-    <a className="link link-hover">Advertisement</a>
+    <header className="text-2xl font-bold text-pink-500">EventZilla</header> 
+    
   </nav> 
   <nav>
     <header className="text-xl font-bold text-pink-500">Company</header> 
