@@ -10,7 +10,7 @@ import user6 from '../assets/closeee.jpg'
 
 const Customer = () => {
     return (
-        <div className='lg:w-9/12 mx-auto mt-6'>
+        <div className='lg:w-9/12 mx-auto mt-6 mb-7'>
             <div className="carousel bg-white carousel-center w-full  p-4 space-x-4 rounded-box">
   <div className="carousel-item w-4/5 md:w-3/5 hover:bg-black hover:text-white hover:duration-1000 rounded-xl shadow-xl p-5">
     <div className="space-y-4 flex flex-col">
