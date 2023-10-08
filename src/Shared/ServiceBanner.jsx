@@ -15,10 +15,10 @@ const ServiceBanner = () => {
 <Marquee className="bg-black" pauseOnHover={true}><div className="text-xl md:text-2xl font-semibold py-5 bg-black text-pink-500 flex gap-16"><p className="flex items-center gap-2">Wedding Event<GiPartyPopper/></p> <p className="flex items-center gap-2">Private Event<GiPartyPopper/></p> <p className="flex items-center gap-2">Corporate Event <GiPartyPopper/></p> <p className="flex items-center gap-2">Birthday Event<GiPartyPopper/></p> <p className="flex items-center gap-2">Themed Event<GiPartyPopper/></p> <p className="flex items-center gap-2">Holiday Event</p></div>
 </Marquee>
     <div className="flex flex-col-reverse lg:flex-row my-9 gap-5">
-        <img data-aos="fade-up-right"
+        <img data-aos="fade-up"
         data-aos-duration="3000"
         className="lg:h-96 md:h-[500px] md:w-[500px] mx-auto lg:mx-0" src={party} alt="" />
-      <div data-aos="fade-up-left"
+      <div data-aos="fade-up"
       data-aos-duration="3000"
       className="space-y-5 flex flex-col">
         <h1 className="text-3xl md:text-5xl flex-grow text-center font-semibold lg:text-start">

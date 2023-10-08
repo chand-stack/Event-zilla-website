@@ -16,7 +16,7 @@ const About = () => {
         <h1 className='md:text-2xl my-5 px-2 md:px-10 font-semibold'><span className='text-pink-500 text-3xl'>Event Zilla</span> is a full-service event management company that specializes in planning and executing unforgettable events of all sizes. We have over 20 years of experience in the industry, and our team of experienced event planners is passionate about creating events that exceed our clients expectations.</h1>
         
         <div className='grid lg:grid-cols-2 gap-6 px-2 md:px-10'>
-            <img data-aos="fade-right" className='' src={female} alt="" />
+            <img data-aos="fade-up" className='' src={female} alt="" />
             <div className='flex flex-col'>
               <h1 className='text-2xl font-semibold flex-grow'>We offer a wide range of <span className='text-pink-500'>event management services</span>, including:</h1>
               <li className='font-semibold md:text-xl flex-grow'>Venue selection and booking</li>
@@ -39,7 +39,7 @@ const About = () => {
         
 
 <div className='grid gap-4 mx-2 md:mx-10 md:grid-cols-3'>
-<div data-aos="fade-right" className="card  bg-base-100 image-full">
+<div data-aos="fade-up" className="card  bg-base-100 image-full">
   <figure><img src={bg} /></figure>
   <div className="card-body">
     <p>We have a proven track record of success. We have successfully planned and executed hundreds of events of all sizes, from small corporate gatherings to大型国际会议。</p>
@@ -51,7 +51,7 @@ const About = () => {
     <p>We have a team of experienced and knowledgeable event planners. Our team is made up of seasoned professionals who have a deep understanding of the event industry.</p>
   </div>
 </div>
-<div data-aos="fade-left" className="card bg-base-100 image-full">
+<div data-aos="fade-up" className="card bg-base-100 image-full">
   <figure><img src={bg} /></figure>
   <div className="card-body">
     <p>We offer a wide range of event management services. We can handle everything from venue selection and booking to catering and transportation.</p>

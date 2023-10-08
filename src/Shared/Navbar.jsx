@@ -52,6 +52,14 @@ setUserName(user?.displayName)
 >
   Services
 </NavLink></li>
+    <li className="font-semibold text-xl"><NavLink
+  to="/portfolio"
+  className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "text-pink-500 underline" : ""
+  }
+>
+  Portfolio
+</NavLink></li>
     </>
 
     const navigate = useNavigate()

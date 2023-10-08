@@ -29,10 +29,10 @@ const Detail = () => {
         </div>
         <p className="text-2xl my-3 font-semibold text-center md:w-4/5 mx-auto">{detail.short_detail}</p>
         <div className="flex flex-col-reverse md:flex-col">
-            <img data-aos="fade-left"
+            <img data-aos="fade-up"
      data-aos-easing="linear"
      data-aos-duration="1500" className="md:h-[400px] mx-auto my-3" src={detail.image} alt="" />
-            <div data-aos="fade-right"
+            <div data-aos="fade-up"
      data-aos-easing="linear"
      data-aos-duration="1000" className="space-y-3 px-1 md:px-5">
                 
