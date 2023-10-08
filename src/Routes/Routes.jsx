@@ -9,6 +9,7 @@ import About from "../Components/Pages/About";
 import Contact from "../Components/Pages/Contact";
 import Blog from "../Components/Pages/Blog";
 import Service from "../Components/Pages/Service";
+import Portfolio from "../Components/Pages/Portfolio";
 
 
 const routes = createBrowserRouter([
@@ -48,6 +49,10 @@ const routes = createBrowserRouter([
             {
                 path:"/services",
                 element:<Service/>
+            },
+            {
+                path:"/portfolio",
+                element:<Portfolio/>
             }
         ]
     }
