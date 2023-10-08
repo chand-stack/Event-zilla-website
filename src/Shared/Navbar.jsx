@@ -23,7 +23,7 @@ setUserName(user?.displayName)
     <li className="font-semibold text-xl"><NavLink
   to="/about"
   className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "text-pink-500" : ""
+    isPending ? "pending" : isActive ? "text-pink-500 underline" : ""
   }
 >
   About Us
@@ -31,7 +31,7 @@ setUserName(user?.displayName)
     <li className="font-semibold text-xl"><NavLink
   to="/contact"
   className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "text-pink-500" : ""
+    isPending ? "pending" : isActive ? "text-pink-500 underline" : ""
   }
 >
   Contact Us
@@ -39,7 +39,7 @@ setUserName(user?.displayName)
     <li className="font-semibold text-xl"><NavLink
   to="/blog"
   className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "text-pink-500" : ""
+    isPending ? "pending" : isActive ? "text-pink-500 underline" : ""
   }
 >
   Blog
@@ -71,7 +71,7 @@ setUserName(user?.displayName)
     <Link className="btn btn-ghost normal-case text-xl md:text-3xl">EventZilla</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="gap-5 menu-horizontal px-1 text-white">
       {links}
     </ul>
   </div>

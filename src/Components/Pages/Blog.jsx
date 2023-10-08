@@ -28,7 +28,55 @@ const Blog = () => {
         </div>
         <img className='md:h-96 mx-auto' src={bday} alt="" />
         </div>
-        <p className='text-xl mt-3'>Budgeting is a fundamental aspect of successful birthday event management. It's essential to establish a clear and realistic budget that aligns with the vision while considering factors like venue selection, catering, decor, entertainment, gifts, and other critical elements of a birthday celebration. Striking a balance between the birthday persons desires and financial constraints ensures a well-managed event that leaves a lasting impression.</p>
+        <p className='text-xl mt-3'>Budgeting is a fundamental aspect of successful birthday event management. It is essential to establish a clear and realistic budget that aligns with the vision while considering factors like venue selection, catering, decor, entertainment, gifts, and other critical elements of a birthday celebration. Striking a balance between the birthday persons desires and financial constraints ensures a well-managed event that leaves a lasting impression.</p>
+
+        <h1 className='text-2xl text-center md:text-4xl font-bold mt-10 mb-5'>Elevating Events: The Art and Science of Event Management</h1>
+
+        <div className='grid gap-4 mx-2 md:mx-10 md:grid-cols-3 z-0 mb-5'>
+        <div className="card  bg-base-100 image-full">
+  <figure><img src={bg} /></figure>
+  <div className="card-body">
+    <h1 className='card-title'>Understanding Event Management</h1>
+    <p>Event management involves conceiving, planning, and executing a variety of events, ranging from corporate conferences and product launches to weddings, birthdays, and cultural celebrations. It encompasses a range of activities, including budgeting, venue selection, decor, catering, entertainment, logistics, and overall coordination to ensure the events success.</p>
+  </div>
+</div>
+        <div className="card  bg-base-100 image-full">
+  <figure><img src={bg} /></figure>
+  <div className="card-body">
+    <h1 className='card-title'>The Blueprint of Success: Planning</h1>
+    <p>Every successful event begins with meticulous planning. The process starts by understanding the clients objectives, target audience, and event purpose. Establishing clear goals and outcomes helps in crafting a detailed blueprint that guides every aspect of the event. Planning involves defining the event scope, setting a realistic budget, creating timelines, and identifying potential risks and mitigation strategies.</p>
+  </div>
+</div>
+        <div className="card  bg-base-100 image-full">
+  <figure><img src={bg} /></figure>
+  <div className="card-body">
+    <h1 className='card-title'>Designing the Experience: Creativity and Decor</h1>
+    <p>Creativity is the heart and soul of event management. Whether it is a corporate event or a personal celebration, the aesthetics and ambiance play a significant role in shaping attendees perceptions. Event managers work closely with designers and decorators to conceptualize themes, color schemes, lighting, and decor elements that align with the events purpose and the clients vision. The aim is to create a memorable and immersive experience for all participants.</p>
+  </div>
+</div>
+        <div className="card  bg-base-100 image-full">
+  <figure><img src={bg} /></figure>
+  <div className="card-body">
+    <h1 className='card-title'>Venue Selection: The Foundation of the Event</h1>
+    <p>Selecting an appropriate venue is paramount. The venue sets the stage and can significantly influence the events success. Event managers consider factors such as location, capacity, accessibility, facilities, and ambiance when choosing a venue. The goal is to find a space that complements the events theme and caters to the specific needs of the attendees.</p>
+  </div>
+</div>
+        <div className="card  bg-base-100 image-full">
+  <figure><img src={bg} /></figure>
+  <div className="card-body">
+    <h1 className='card-title'>Culinary Delights: Catering Services</h1>
+    <p>Food and beverages are an integral part of any event. Event managers collaborate with caterers to curate a menu that suits the event type and the preferences of the attendees. From formal sit-down dinners to casual buffets and themed culinary experiences, the catering service is designed to enhance the overall event atmosphere and leave a lasting impression on the guests.</p>
+  </div>
+</div>
+        <div className="card  bg-base-100 image-full">
+  <figure><img src={bg} /></figure>
+  <div className="card-body">
+    <h1 className='card-title'>Entertainment and Engagement</h1>
+    <p>Engagement is key to a successful event. Event managers organize entertainment that aligns with the events purpose and resonates with the audience. This could include live performances, interactive sessions, guest speakers, or activities that encourage participation. The aim is to keep attendees engaged and make the event both enjoyable and educational.</p>
+  </div>
+</div>
+        </div>
+
         </>
     );
 };
