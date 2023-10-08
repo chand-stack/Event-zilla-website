@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
+import { useContext } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 const Login = () => {
 
+  const {loginWithGoogle} = useContext(AuthContext)
 
+  const googlehandler = () => {
+    loginWithGoogle()
+    .then(()=>{})
+    .catch(()=>{})
+  }
     return (
         <div>
             <div className=" bg-white  p-3 border-2 border-black my-5 mx-1 md:mx-auto lg:w-3/6 md:w-4/5">
@@ -35,7 +43,7 @@ const Login = () => {
         <p className="font-bold text-center">Do Not Have An Account? Please <Link to="/register" className="text-pink-500">Register</Link></p>
         <p className="text-center my-3 font-bold text-xl">---Or---</p>
         <div className="flex justify-center">
-        <Link><button className="btn btn-outline font-extrabold flex justify-center"><FcGoogle className="text-2xl"/>Continue with google</button></Link>
+        <button onClick={googlehandler} className="btn btn-outline font-extrabold flex justify-center"><FcGoogle className="text-2xl"/>Continue with google</button>
         </div>
       </form>
     </div>

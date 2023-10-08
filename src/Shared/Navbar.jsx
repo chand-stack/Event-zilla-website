@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-
+import userimg from '../assets/icons8-user.gif'
 
 const Navbar = () => {
 
@@ -63,7 +63,9 @@ const Navbar = () => {
     {
       user ? <div className="flex items-center gap-3">
         <p>{user?.displayName}</p>
-        <img src={user?.photoURL} alt="" />
+        <div>
+        <img className="rounded-full h-14" src={user?.photoURL ? user?.photoURL : userimg} alt="" />
+        </div>
          <button onClick={handleLogout} className="btn btn-outline text-white">Log Out</button>
       </div> : <Link to="/login"><button className="btn btn-outline text-white">Login</button></Link>
     }

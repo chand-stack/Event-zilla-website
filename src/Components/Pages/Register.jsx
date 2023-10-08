@@ -5,7 +5,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import swal from 'sweetalert';
 
 const Register = () => {
-    const {createUser,updateUser} = useContext(AuthContext)
+    const {createUser,updateUser,loginWithGoogle} = useContext(AuthContext)
 
     const registerHandler = e => {
         e.preventDefault()
@@ -55,6 +55,13 @@ const Register = () => {
         })
         
     }
+
+    const googlehandler = () => {
+      loginWithGoogle()
+      .then(()=>{})
+      .catch(()=>{})
+    }
+
     return (
         <div>
             <div className=" bg-white p-3 border-2 border-black my-5 mx-1 md:mx-auto lg:w-3/6 md:w-4/5">
@@ -80,7 +87,7 @@ const Register = () => {
           <input type="text"
            placeholder="Your Photo Url" 
            name="photo"
-           className="input input-bordered" required />
+           className="input input-bordered" />
         </div>
         <div className="form-control">
           <label className="label">
@@ -110,7 +117,7 @@ const Register = () => {
 
         <p className="text-center my-3 font-bold text-xl">---Or---</p>
         <div className="flex justify-center">
-        <Link><button className="btn btn-outline font-extrabold flex justify-center"><FcGoogle className="text-2xl"/>Continue with google</button></Link>
+        <button onClick={googlehandler} className="btn btn-outline font-extrabold flex justify-center"><FcGoogle className="text-2xl"/>Continue with google</button>
         </div>
       </form>
       
