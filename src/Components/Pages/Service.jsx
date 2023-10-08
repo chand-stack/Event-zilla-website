@@ -1,4 +1,4 @@
-import bg from '../../assets/wepik.jpeg'
+import bg from '../../assets/post-img4.jpg'
 import { FaRegSmileBeam } from 'react-icons/fa';
 import { TfiGift } from 'react-icons/tfi';
 import { IoDiamondOutline } from 'react-icons/io5';
@@ -9,7 +9,7 @@ import imgtwo from '../../assets/2-4.jpg'
 const Service = () => {
     return (
         <>
-        <div className="h-72 md:h-[60vh]" style={{backgroundImage:`url(${bg})`,backgroundPosition:'center'}}>
+        <div className="h-72 md:h-[60vh]" style={{backgroundImage:`url(${bg})`,backgroundPosition:'center',backgroundSize:'cover'}}>
             <h1 className="h-full w-full bg-black bg-opacity-80 text-white text-3xl md:text-5xl lg:text-7xl font-semibold flex justify-center items-center"><span className="text-pink-500">Serv</span>ices</h1>
         </div>
         <h1 className='text-3xl md:text-5xl lg:text-7xl text-center my-7 md:my-16'>The <span className='font-semibold text-pink-500'>Event Management</span> Specialists</h1>

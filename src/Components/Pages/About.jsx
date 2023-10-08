@@ -1,4 +1,4 @@
-import bg from '../../assets/wepik.jpeg'
+import bg from '../../assets/post-img4.jpg'
 import female from '../../assets/female.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -10,7 +10,7 @@ const About = () => {
       }, [])
     return (
         <>
-        <div className="h-72 md:h-[60vh]" style={{backgroundImage:`url(${bg})`,backgroundPosition:'center'}}>
+        <div className="h-72 md:h-[60vh]" style={{backgroundImage:`url(${bg})`,backgroundPosition:'center',backgroundSize:'cover'}}>
             <h1 className="h-full w-full bg-black bg-opacity-80 text-white text-3xl md:text-5xl lg:text-7xl font-semibold flex justify-center items-center"><span className="text-pink-500">About</span> Us</h1>
         </div>
         <h1 className='md:text-2xl my-5 px-2 md:px-10 font-semibold'><span className='text-pink-500 text-3xl'>Event Zilla</span> is a full-service event management company that specializes in planning and executing unforgettable events of all sizes. We have over 20 years of experience in the industry, and our team of experienced event planners is passionate about creating events that exceed our clients expectations.</h1>
