@@ -44,6 +44,14 @@ setUserName(user?.displayName)
 >
   Blog
 </NavLink></li>
+    <li className="font-semibold text-xl"><NavLink
+  to="/services"
+  className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "text-pink-500 underline" : ""
+  }
+>
+  Services
+</NavLink></li>
     </>
 
     const navigate = useNavigate()

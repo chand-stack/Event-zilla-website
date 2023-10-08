@@ -47,7 +47,9 @@ const Register = () => {
         .then(result => {
             console.log(result.user)
             updateUser(name,photo)
-            .then(()=>{})
+            .then(()=>{
+              window.location.reload()
+            })
             .catch(()=>{})
             swal({
                 icon: "success",
