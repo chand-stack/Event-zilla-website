@@ -7,6 +7,7 @@ import { FaPeopleRobbery } from "react-icons/fa6";
 const ServiceVarity = () => {
   return (
     <>
+      <div className="container mx-auto">
       <div
         className="h-fit mt-10"
         style={{ backgroundImage: `url(${bg})`, backgroundPosition: "center" }}
@@ -47,6 +48,7 @@ const ServiceVarity = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

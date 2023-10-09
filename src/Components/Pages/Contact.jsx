@@ -14,7 +14,8 @@ const Contact = () => {
         </h1>
       </div>
 
-      <div className="bg-black flex flex-col-reverse lg:flex-row">
+      <div className="bg-black w-full">
+      <div className="bg-black container mx-auto flex flex-col-reverse lg:flex-row">
         <div className="bg-black text-white flex my-10 flex-col flex-grow">
           <div className="flex gap-1 border-b flex-grow">
             <FaMapMarkerAlt className="text-2xl text-pink-500"></FaMapMarkerAlt>
@@ -106,6 +107,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

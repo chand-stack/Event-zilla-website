@@ -11,7 +11,7 @@ const ServiceBanner = () => {
   }, []);
   return (
     <>
-      <Marquee className="bg-black" pauseOnHover={true}>
+    <Marquee className="bg-black" pauseOnHover={true}>
         <div className="text-xl md:text-2xl font-semibold py-5 bg-black text-pink-500 flex gap-16">
           <p className="flex items-center gap-2">
             Wedding Event
@@ -35,6 +35,8 @@ const ServiceBanner = () => {
           <p className="flex items-center gap-2">Holiday Event</p>
         </div>
       </Marquee>
+      <div className="container mx-auto">
+      
       <div className="flex flex-col-reverse lg:flex-row my-9 gap-5">
         <img
           data-aos="fade-up"
@@ -82,6 +84,7 @@ const ServiceBanner = () => {
             </p>
           </section>
         </div>
+      </div>
       </div>
     </>
   );

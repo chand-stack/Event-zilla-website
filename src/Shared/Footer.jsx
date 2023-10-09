@@ -1,6 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-black text-white ">
+    <footer className=" p-10 bg-black text-white ">
+      <div className="container mx-auto footer">
       <nav>
         <header className="text-3xl font-bold text-white">EventZilla</header>
       </nav>
@@ -35,6 +36,7 @@ const Footer = () => {
           </div>
         </fieldset>
       </form>
+      </div>
     </footer>
   );
 };

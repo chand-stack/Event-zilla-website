@@ -33,7 +33,9 @@ const Detail = () => {
           <span className="text-pink-500">{detail.name}</span> Event Details
         </h1>
       </div>
-      <p className="text-2xl my-3 font-semibold text-center md:w-4/5 mx-auto">
+
+     <div className="container mx-auto">
+     <p className="text-2xl my-3 font-semibold text-center md:w-4/5 mx-auto">
         {detail.short_detail}
       </p>
       <div className="flex flex-col-reverse md:flex-col">
@@ -102,6 +104,7 @@ const Detail = () => {
           Book Now {detail.price}$
         </button>
       </div>
+     </div>
     </>
   );
 };

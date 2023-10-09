@@ -16,6 +16,7 @@ const Portfolio = () => {
         </h1>
       </div>
 
+      <div className="container mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-8 px-1 md:px-5">
         <div className="card bg-base-100 shadow-xl hover:bg-black hover:text-white hover:duration-1000 ">
           <figure>
@@ -124,6 +125,7 @@ const Portfolio = () => {
           AFFORDABLE <span className="text-pink-500">Event PLANNER </span>AND{" "}
           <span className="text-pink-500">EVENTS </span>COORDINATOR!
         </h1>
+      </div>
       </div>
     </>
   );

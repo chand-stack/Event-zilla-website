@@ -25,6 +25,7 @@ const Service = () => {
           <span className="text-pink-500">Serv</span>ices
         </h1>
       </div>
+      <div className="container mx-auto">
       <h1 className="text-3xl md:text-5xl lg:text-7xl text-center my-7 md:my-16">
         The{" "}
         <span className="font-semibold text-pink-500">Event Management</span>{" "}
@@ -168,6 +169,7 @@ const Service = () => {
             Cost-effective and user-friendly interface.
           </p>
         </div>
+      </div>
       </div>
     </>
   );

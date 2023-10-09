@@ -14,6 +14,7 @@ const Blog = () => {
         </h1>
       </div>
 
+      <div className=" container mx-auto">
       <h1 className="text-2xl md:text-4xl font-bold mt-10">
         Crafting Unforgettable Wedding Events: A Guide to Exceptional Event
         Management
@@ -200,6 +201,7 @@ const Blog = () => {
             </p>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
