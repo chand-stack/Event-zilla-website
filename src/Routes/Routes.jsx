@@ -10,12 +10,14 @@ import Contact from "../Components/Pages/Contact";
 import Blog from "../Components/Pages/Blog";
 import Service from "../Components/Pages/Service";
 import Portfolio from "../Components/Pages/Portfolio";
+import Error from "../Components/Pages/Error";
 
 
 const routes = createBrowserRouter([
     {
         path:"/",
         element:<Root/>,
+        errorElement:<Error/>,
         children:[
             {
                 path:"/",
