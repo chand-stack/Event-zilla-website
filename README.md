@@ -1,6 +1,8 @@
 
 # "EventZilla" Event Management
 
+### Live Link [Event Zilla](https://event-zilla-2a091.web.app/)
+
 "This repository contains the code for an event management website, designed to streamline the process of organizing and managing events of various types. The website provides a user-friendly interface for event organizers and attendees, offering features that enhance event planning and participation."
 
 
