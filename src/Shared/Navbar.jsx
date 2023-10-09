@@ -44,7 +44,9 @@ setUserName(user?.displayName)
 >
   Blog
 </NavLink></li>
-    <li className="font-semibold text-xl"><NavLink
+    {
+      user && <>
+      <li className="font-semibold text-xl"><NavLink
   to="/services"
   className={({ isActive, isPending }) =>
     isPending ? "pending" : isActive ? "text-pink-500 underline" : ""
@@ -60,6 +62,8 @@ setUserName(user?.displayName)
 >
   Portfolio
 </NavLink></li>
+      </>
+    }
     </>
 
     const navigate = useNavigate()
@@ -93,13 +97,23 @@ setUserName(user?.displayName)
   </div>
   <div className="navbar-end">
     {
-      user ? <div className="flex items-center gap-3">
+      user ? 
+      <details className="dropdown">
+  <summary className="m-1 h-fit btn bg-black text-white"><div className="flex items-center gap-3">
         <p>{userName}</p>
         <div>
         <img className="rounded-full h-14" src={user?.photoURL ? user?.photoURL : userimg} alt="" />
         </div>
-         <button onClick={handleLogout} className="btn btn-outline text-white">Log Out</button>
-      </div> : <Link to="/login"><button className="btn btn-outline text-white">Login</button></Link>
+      </div></summary>
+  <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+    <li><button onClick={handleLogout} className="btn btn-outline text-black">Log Out</button></li>
+
+  </ul>
+</details>
+      
+      
+      
+       : <Link to="/login"><button className="btn btn-outline text-white">Login</button></Link>
     }
     
   </div>

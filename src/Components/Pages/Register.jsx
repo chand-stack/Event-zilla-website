@@ -50,14 +50,17 @@ const Register = () => {
             .then(()=>{
               window.location.reload()
             })
-            .catch(()=>{})
+            navigate("/")
+            .catch(()=>{})})
             swal({
-                icon: "success",
-                title:"Successfully Registered"
-              })
-              navigate("/")
-        })
+              icon: "success",
+              title:"Successfully Registered"
+            })
         .catch(error => {
+          swal({
+            icon: "error",
+            title:"email-already-in-use"
+          });
             console.log(error)
         })
         
@@ -66,6 +69,10 @@ const Register = () => {
     const googlehandler = () => {
       loginWithGoogle()
       .then(()=>{
+        swal({
+          icon: "success",
+          title:"Successfully Registered"
+        })
         navigate("/")
       })
       .catch(()=>{})

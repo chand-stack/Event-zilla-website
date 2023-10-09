@@ -10,7 +10,7 @@ const Login = () => {
   const {loginWithGoogle,loginUser} = useContext(AuthContext)
 
   const location = useLocation()
-  console.log(location);
+  
   const navigate = useNavigate()
 
   const loginHandler = e => {
