@@ -21,6 +21,7 @@ const About = () => {
           <span className="text-pink-500">About</span> Us
         </h1>
       </div>
+      <div className="container mx-auto">
       <h1 className="md:text-2xl my-5 px-2 md:px-10 font-semibold">
         <span className="text-pink-500 text-3xl">Event Zilla</span> is a
         full-service event management company that specializes in planning and
@@ -132,6 +133,7 @@ const About = () => {
         today. We would be happy to discuss your needs and develop a custom
         event plan that meets your budget and objectives.
       </h1>
+      </div>
     </>
   );
 };
