@@ -47,7 +47,7 @@ const Login = () => {
     .catch(()=>{
       swal({
         icon: "error",
-        title:"email-already-in-use"
+        title:"invalid-login-credentials"
       });
     })
   }

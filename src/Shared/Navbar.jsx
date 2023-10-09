@@ -102,7 +102,7 @@ setUserName(user?.displayName)
   <summary className="m-1 h-fit btn bg-black text-white"><div className="flex items-center gap-3">
         <p>{userName}</p>
         <div>
-        <img className="rounded-full h-14" src={user?.photoURL ? user?.photoURL : userimg} alt="user" />
+        <img className="rounded-full h-14 p-1" src={user?.photoURL ? user?.photoURL : userimg} alt="user" />
         </div>
       </div></summary>
   <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">

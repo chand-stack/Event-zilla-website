@@ -46,16 +46,17 @@ const Register = () => {
         createUser(email,password)
         .then(result => {
             console.log(result.user)
+            swal({
+              icon: "success",
+              title:"Successfully Registered"
+            })
             updateUser(name,photo)
             .then(()=>{
               window.location.reload()
             })
             navigate("/")
             .catch(()=>{})})
-            swal({
-              icon: "success",
-              title:"Successfully Registered"
-            })
+            
         .catch(error => {
           swal({
             icon: "error",
