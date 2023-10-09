@@ -49,16 +49,11 @@ const Register = () => {
         updateUser(name, photo).then(() => {
           window.location.reload();
         });
-        navigate("/").catch(() => {});
+        navigate("/")
+        .catch(() => {});
       })
 
-      .catch((error) => {
-        swal({
-          icon: "error",
-          title: "email-already-in-use",
-        });
-        console.log(error);
-      });
+      .catch((error) => {console.log(error)});
   };
 
   const googlehandler = () => {
